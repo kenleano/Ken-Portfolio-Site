@@ -149,8 +149,8 @@ import {
       points: [
         "Managed the creative art direction of 7 of the Philippines' no. 1 brands across diverse categories", 
 "Facilitated the creation of several advertising campaigns in mediums like tv, print, and social media through collaboration with clients, cross-functional teams, and suppliers",
-"Led the team training initiative, providing comprehensive instruction to 5 art directors in modern social media practices, digital advertising, and motion graphics animation using Adobe After Effects expanding the company's service offerings, allowing for the delivery of cutting-edge solutions, and driving an increase in billable materials",
-"Oversaw international distribution, designed labels for countries including Canada, USA, Russia, Singapore, UAE, and the Philippines. Ensured that the packaging labels were visually appealing, effectively communicated product information in multiple languages, and met the specific requirements of each country",
+
+"Designed labels for countries including Canada, USA, Russia, Singapore, UAE, and the Philippines. Ensured that the packaging labels were visually appealing, effectively communicated product information in multiple languages, and met the specific requirements of each country",
       ],
     },
     {

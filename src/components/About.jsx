@@ -53,18 +53,20 @@ const About = () => {
     <div>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+       I'm a computer and information systems student at Douglas College by day and designer by night. 
+       My goal is to combine creative thinking and technical skills to develop and design beautiful websites and applications.
+       Before becoming a developer, I worked as an Art Director in advertising creating ad campaigns for some of the Philippines' #1 brands.
+       <br />
+       I work great in teams, and I'm always looking for opportunities to learn and grow!
+  
+      
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
@@ -72,6 +74,23 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+      >
+       
+       <br />
+       Front-End: React.js, Next.js, Three.js, HTML, CSS, SCSS, JavaScript, Tailwind CSS
+        <br />
+        Back-End: Node.js, Express.js, MongoDB, Firebase
+        <br />
+      Design: Figma, Adobe Photoshop, Adobe Illustrator, Adobe After Effects
+      <br />
+      Tools: Git, Github, Vercel, VSCode, Android Studio
+      <br/>
+      
+      </motion.p>
+      
     </div>
   );
 };

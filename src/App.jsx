@@ -24,15 +24,17 @@ const App = () => {
           <div className="relative z-0">
            
             <Hero />
-            <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8}>
+            <Tilt>
               <Empty />
               <StarsCanvas />
             </Tilt>
           </div>
         </div>
-
         <About />
-        <Tech />
+        
+        <div  className="overflow-hidden">
+        <Tech/>
+        </div>
         <Works />
         <Experience />
 
