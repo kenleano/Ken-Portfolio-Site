@@ -56,7 +56,7 @@ abody {
   border-radius: 21px;
   background-image: linear-gradient(
     var(--rotate)
-    , #5ddcff, #3c67e3 43%, #4e00c2);
+    ,#5ddcff, #3c67e3 43%, #4e00c2);
     position: absolute;
     z-index: -1;
  
@@ -68,15 +68,15 @@ abody {
   opacity: 100%;
 }
 
-.card::after {
+.card:hover::after {
   position: absolute;
   content: "";
   top:0;
   left: 0;
   right: 0;
   z-index: -1;
-  height: 95%;
-  width: 85%;
+  height: 120%;
+  width: 120%;
   margin: 0 auto;
   transform: scale(0.8);
   filter: blur(calc(var(--card-height) / 6));
@@ -104,3 +104,17 @@ a {
   font-weight: bold;
   margin-top: 2rem;
 }
+
+.texttitle {
+  position: relative;
+  display: inline-block; /* Ensure that the background-clip affects only the text itself */
+  font-size: 24px; /* Adjust the font size as needed */
+  color: transparent; /* Make the text color transparent to reveal the gradient background */
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari/WebKit browsers */
+  background-image: linear-gradient(var(--rotate),#5ddcff,#5ddcff, #3c67e3 );
+  animation: spin 5.5s linear infinite;
+}
+
+
+

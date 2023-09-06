@@ -8,6 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import "/ServiceCard.css";
 import "/Background.css";
+import "/Hero.scss";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -24,14 +25,23 @@ const ServiceCard = ({ index, title, icon }) => (
         }}
         className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
       >
+     <div class="gradient-image">
         <img
           src={icon}
           alt='web-development'
+          class='gradient-image'
           className='w-16 h-16 object-contain'
+         
         />
+           <div class="gradient-mask"></div>
+          
+        
+        </div>
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        <h3 className=' text-white text-[20px] font-black text-center'>
+          <span class='texttitle' >
           {title}
+          </span>
         </h3>
       </div>
     </motion.div>

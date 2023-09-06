@@ -19,26 +19,24 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="aurora bg-primary ">
+      <Navbar />
         <div className=" bg-cover bg-no-repeat bg-center">
           <div className="relative z-0">
-            <Navbar />
+           
             <Hero />
-            <Tilt 
-            tiltMaxAngleX={8} tiltMaxAngleY={8}>
-            
+            <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8}>
               <Empty />
               <StarsCanvas />
             </Tilt>
           </div>
         </div>
-        <div>
-          <About />
-        </div>
-        <div>
-          <Experience />
-        </div>
+
+        <About />
         <Tech />
         <Works />
+        <Experience />
+
+       
 
         <div className="relative z-0">
           <Contact />

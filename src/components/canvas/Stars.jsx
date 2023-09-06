@@ -24,6 +24,7 @@ const Stars = (props) => {
           size={0.002}
           sizeAttenuation={true}
           depthWrite={false}
+          
         />
       </Points>
     </group>

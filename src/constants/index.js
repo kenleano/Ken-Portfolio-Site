@@ -24,6 +24,8 @@ import {
     jobit,
     tripguide,
     threejs,
+    graphic,
+    motion,
   } from "../assets";
   
   export const navLinks = [
@@ -52,11 +54,11 @@ import {
     },
     {
       title: "Graphic Designer",
-      icon: backend,
+      icon: graphic,
     },
     {
       title: "Motion Graphics Animator",
-      icon: creator,
+      icon: motion,
     },
   ];
   
@@ -117,32 +119,33 @@ import {
   
   const experiences = [
     {
-      title: "Graphic Designer",
-      company_name: "Coal Prints Inc.",
-      icon: coalprints,
-      iconBg: "#383E56",
-      date: "September 2022 - February 2023",
-      points: [
-        "Communicated daily with new and existing customers, grasping their business problems, to create print designs that consistently met their objectives, resulting in the acquisition of new regular clients.",
-        "Ensured error-free delivery of large-scale printed materials through quality control, adherence to specifications, and attention to detail. Consistently met deadlines by delivering over a thousand materials weekly.",
-      ],
-    },
-    {
-      title: "Graphic Designer",
+      title: "Freelance Graphic Designer",
       company_name: "Prestigehaus.com",
       icon: prestige,
       iconBg: "#E6DEDD",
-      date: "October 2020 - Present",
+      date: "Oct 2020 - Present",
       points: [
         "Designed social media content for various platforms, delivered over 100 monthly social media materials, comprising 10 blog posts, 30 product social media cards, 21 Pinterest posts, 14 Instagram stories, and 14 Instagram/Facebook posts.",
       ],
     },
     {
+      title: "Graphic Designer",
+      company_name: "Coal Prints Inc.",
+      icon: coalprints,
+      iconBg: "#383E56",
+      date: "Sep 2022 - Feb 2023",
+      points: [
+        "Communicated daily with new and existing customers, grasping their business problems, to create print designs that consistently met their objectives, resulting in the acquisition of new regular clients.",
+        "Ensured error-free delivery of large-scale printed materials through quality control, adherence to specifications, and attention to detail. Consistently met deadlines by delivering over a thousand materials weekly.",
+      ],
+    },
+   
+    {
       title: "Art Director",
       company_name: "PCV Communications",
       icon: pcv,
       iconBg: "#383E56",
-      date: "September 2017 - September 2020",
+      date: "Sep 2017 - Sep 2020",
       points: [
         "Managed the creative art direction of 7 of the Philippines' no. 1 brands across diverse categories", 
 "Facilitated the creation of several advertising campaigns in mediums like tv, print, and social media through collaboration with clients, cross-functional teams, and suppliers",
@@ -196,7 +199,7 @@ import {
     {
       name: "Beat Your Best",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Beat Your Best: Your ultimate workout tracker, powered by Firebase and ExerciseDB API. Discover exercises, filter by category, and achieve your fitness goals with ease.",
       tags: [
         {
           name: "java",
@@ -212,29 +215,9 @@ import {
         },
       ],
       image: beatyourbest,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/kenleano/BeatYourBestApp",
     },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
+
     {
       name: "Trip Guide",
       description:
