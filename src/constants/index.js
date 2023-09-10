@@ -21,11 +21,24 @@ import {
     jump,
     prestige,
     carrent,
+    bybcover,
     jobit,
     tripguide,
     threejs,
     graphic,
     motion,
+    EditProfile,
+    Exercise,
+    ExerciseName,
+    History,
+    Login,
+    Profile,
+    Register,
+    Workout,
+    WorkoutName,
+    WorkoutRoutineAdded,
+    StartWorkout,
+    SearchExercises,
   } from "../assets";
   
   export const navLinks = [
@@ -57,7 +70,7 @@ import {
       icon: graphic,
     },
     {
-      title: "Motion Graphics Animator",
+      title: "Motion Designer",
       icon: motion,
     },
   ];
@@ -240,5 +253,28 @@ import {
       source_code_link: "https://github.com/",
     },
   ];
+
+  const bybimages = [
+    { src: Login, alt: "Login" },
+    { src: Register, alt: "Register" },
+    { src: Profile, alt: "Profile" },
+    { src: EditProfile, alt: "EditProfile" },
+    { src: Workout, alt: "Workout" },
+    { src: WorkoutName, alt: "Workout Name" },
+    { src: WorkoutRoutineAdded, alt: "Workout Routine Added" },
+
+    { src: Exercise, alt: "Exercise" },
+    { src: SearchExercises, alt: "Search Exercises" },
+    { src: ExerciseName, alt: "Exercise Name" },
+
+   
+   
+   
+
+
+    { src: StartWorkout, alt: "Start Workout" },
+    { src: History, alt: "History" },
+
+  ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects, bybimages };

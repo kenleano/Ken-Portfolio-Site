@@ -9,6 +9,7 @@ import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Scroll from './Scroll';
 import Empty from './Empty';
+import BeatYourBestPage from './BeatYourBestPage';
 
 export {
   Hero,
@@ -24,5 +25,6 @@ export {
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  BeatYourBestPage,
 }

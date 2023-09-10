@@ -6,6 +6,7 @@ $color-green: #81fc45;
 $color-blue: #45d8fc;
 $color-indigo: #5245fc;
 $color-violet: #af45fc;
+$color-pink: #F068C1;
 
 $color-black: #111111;
 
@@ -26,6 +27,17 @@ $color-black: #111111;
 		$color-yellow,
 		$color-green,
 		$color-blue,
+		$color-indigo, 
+		$color-violet
+	);
+  background-size: 200% 200%;
+}
+
+@mixin rainbow2() {
+	background-image: linear-gradient(
+    to right,
+	  $color-orange,
+    $color-pink,
 		$color-indigo, 
 		$color-violet
 	);
@@ -60,11 +72,18 @@ $color-black: #111111;
 }
 
 .text {
-  
-  
+  font-family: 'Trap', sans-serif; 
   color: transparent;
-  
   @include rainbow;
   @include crossBrowserPrefix(animation, magic 3s infinite linear alternate);
   @include crossBrowserPrefix(background-clip, text);
 }
+
+.text2 {
+  font-family: 'Trap', sans-serif; 
+  color: transparent;
+  @include rainbow2;
+  @include crossBrowserPrefix(animation, magic 3s infinite linear alternate);
+  @include crossBrowserPrefix(background-clip, text);
+}
+

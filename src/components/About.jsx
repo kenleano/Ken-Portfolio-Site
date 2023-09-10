@@ -7,7 +7,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import "/ServiceCard.css";
-import "/Background.css";
+
 import "/Hero.scss";
 
 const ServiceCard = ({ index, title, icon }) => (
@@ -23,23 +23,23 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg-primary rounded-[20px] py-5 px-12 flex justify-evenly items-center flex-col'
       >
      <div class="gradient-image">
-        <img
+        {/* <img
           src={icon}
           alt='web-development'
           class='gradient-image'
           className='w-16 h-16 object-contain'
          
-        />
-           <div class="gradient-mask"></div>
+        /> */}
+     
           
         
         </div>
 
         <h3 className=' text-white text-[20px] font-black text-center'>
-          <span class='texttitle' >
+          <span class='texttitle'   style={{ fontFamily: 'Trap' }}>
           {title}
           </span>
         </h3>
@@ -53,7 +53,7 @@ const About = () => {
     <div>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview</h2>
+        <h2 className={styles.sectionHeadText}  style={{ fontFamily: 'Trap' }}><span class='text2' >Overview</span></h2>
       </motion.div>
 
       <motion.p
@@ -69,7 +69,7 @@ const About = () => {
       
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-10 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

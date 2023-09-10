@@ -1,4 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import {
   About,
   Contact,
@@ -11,41 +12,43 @@ import {
   Empty,
   Scroll,
   StarsCanvas,
+
 } from "./components";
 import "/Background.css";
 import Tilt from "react-parallax-tilt";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className="aurora bg-primary ">
+    <>
+     
       <Navbar />
+      <div className="aurora bg-primary ">
         <div className=" bg-cover bg-no-repeat bg-center">
           <div className="relative z-0">
-           
             <Hero />
+
             <Tilt>
               <Empty />
               <StarsCanvas />
             </Tilt>
           </div>
         </div>
+      
         <About />
-        
-        <div  className="overflow-hidden">
-        <Tech/>
+
+        <div>
+          <Tech />
         </div>
         <Works />
         <Experience />
-
-       
 
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
       </div>
-    </BrowserRouter>
+     
+    </>
   );
 };
 

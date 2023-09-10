@@ -51,12 +51,12 @@ abody {
 
 .card::before {
   content: "";
-  width: 104%;
-  height: 104%;
+  width: 101%;
+  height: 101%;
   border-radius: 21px;
   background-image: linear-gradient(
     var(--rotate)
-    ,#5ddcff, #3c67e3 43%, #4e00c2);
+    , #F068C1 43%, #5245fc, #af45fc );
     position: absolute;
     z-index: -1;
  
@@ -75,14 +75,14 @@ abody {
   left: 0;
   right: 0;
   z-index: -1;
-  height: 120%;
-  width: 120%;
+  height: 100%;
+  width: 100%;
   margin: 0 auto;
   transform: scale(0.8);
-  filter: blur(calc(var(--card-height) / 6));
+  filter: blur(calc(var(--card-height) /10));
   background-image: linear-gradient(
     var(--rotate)
-    , #5ddcff, #3c67e3 43%, #4e00c2);
+    , #fcb045, #F068C1, #5245fc, #af45fc );
     opacity: 1;
   transition: opacity .5s;
   animation: spin 2.5s linear infinite;
@@ -112,7 +112,7 @@ a {
   color: transparent; /* Make the text color transparent to reveal the gradient background */
   background-clip: text;
   -webkit-background-clip: text; /* For Safari/WebKit browsers */
-  background-image: linear-gradient(var(--rotate),#5ddcff,#5ddcff, #3c67e3 );
+  background-image: linear-gradient(var(--rotate), #fcb045, #F068C1, #5245fc, #af45fc );
   animation: spin 5.5s linear infinite;
 }
 

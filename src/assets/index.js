@@ -38,6 +38,19 @@ import coalprints from "./company/coalprints.png";
 import pcv from "./company/pcv.png";
 import jump from "./company/jump.png";
 
+import bybcover from "./byb/cover.jpg";
+import EditProfile from "./byb/EditProfile.png";
+import Exercise from "./byb/Exercise.png";
+import ExerciseName from "./byb/ExerciseName.png";
+import History from "./byb/History.png";
+import Login from "./byb/Login.png";
+import Profile from "./byb/Profile.png";
+import Register from "./byb/Register.png";
+import Workout from "./byb/Workout.png";
+import WorkoutName from "./byb/WorkoutName.png";
+import WorkoutRoutineAdded from "./byb/WorkoutRoutineAdded.png";
+import StartWorkout from "./byb/StartWorkout.png";
+import SearchExercises from "./byb/SearchExercises.png";
 
 export {
   logo,
@@ -59,6 +72,7 @@ export {
   javascript,
   mongodb,
   nodejs,
+  bybcover,
   reactjs,
   redux,
   tailwind,
@@ -75,4 +89,18 @@ export {
   carrent,
   jobit,
   tripguide,
+
+  EditProfile,
+  Exercise,
+  ExerciseName,
+  History,
+  Login,
+  Profile,
+  Register,
+  Workout,
+  WorkoutName,
+  WorkoutRoutineAdded,
+  StartWorkout,
+  SearchExercises,
+
 };
