@@ -60,7 +60,7 @@ abody {
     position: absolute;
     z-index: -1;
  
-    animation: spin 2.5s linear infinite;
+    animation: spin 12s linear infinite;
 }
 
 .card:hover::before {

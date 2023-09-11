@@ -11,6 +11,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
   index,
+  projectlink,
   name,
   description,
   tags,
@@ -51,10 +52,11 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className="mt-5">
-         <button>
-         <Link to="/beatyourbest">
-          <h3 className="text-white font-bold text-[24px]"  style={{ fontFamily: 'Trap' }}>{name}</h3>
+        <div className="mt-5 ">
+         <button class='buttonProject'  style={{ width: "100%" }}>
+         <Link to={`${projectlink}`}>
+          <h3 className="text-white font-bold text-[24px]"  style={{ fontFamily: 'Trap' }} class="default-text">{name}</h3>
+          <h3 className="text-white font-bold text-[24px]"  style={{ fontFamily: 'Trap' }} class="hover-text">View Project</h3>
           </Link>
           </button>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
@@ -81,11 +83,7 @@ const Works = () => {
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}  style={{ fontFamily: 'Trap' }}><span class='text' >Projects</span></h2>
-        <button className="bg-red-800 px-1">
-         <Link to="/beatyourbest">
-          Button
-          </Link>
-          </button>
+      
       </motion.div>
 
       <div className="w-full flex">

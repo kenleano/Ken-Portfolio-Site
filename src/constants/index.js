@@ -30,7 +30,7 @@ import {
     EditProfile,
     Exercise,
     ExerciseName,
-    History,
+    HistoryImg,
     Login,
     Profile,
     Register,
@@ -210,6 +210,7 @@ import {
   
   const projects = [
     {
+      projectlink:"beatyourbest",
       name: "Beat Your Best",
       description:
         "Beat Your Best: Your ultimate workout tracker, powered by Firebase and ExerciseDB API. Discover exercises, filter by category, and achieve your fitness goals with ease.",
@@ -232,6 +233,7 @@ import {
     },
 
     {
+      projectlink:"tripguide",
       name: "Trip Guide",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
@@ -273,7 +275,7 @@ import {
 
 
     { src: StartWorkout, alt: "Start Workout" },
-    { src: History, alt: "History" },
+    { src: HistoryImg, alt: "HistoryImg" },
 
   ];
   

@@ -11,7 +11,7 @@ import Hero from "./components/Hero.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Navbar />
-    <div className="aurora bg-primary ">
+    <div className=" bg-primary ">
       <div className=" bg-cover bg-no-repeat bg-center">
         <div className="relative z-0">
           <Routes>

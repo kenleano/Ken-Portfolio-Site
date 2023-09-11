@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import { github } from "../assets";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
@@ -91,6 +91,17 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+      </div>
+      <div
+        onClick={() =>
+          window.open("https://github.com/kenleano/BeatYourBestApp", "_blank")
+        }
+       
+      >
+        <button className="flex items-center rounded-2xl px-5 py-2 bg-transparent text-secondary hover:bg-secondary text-white">
+          
+          <span className={` font-light cursor-pointer text-[16px] hover:text-white`}>Resume</span>
+        </button>
       </div>
     </nav>
   );

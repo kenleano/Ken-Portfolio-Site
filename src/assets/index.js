@@ -32,6 +32,7 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import beatyourbest from "./beatyourbest.png";
+import beatyourbest2 from "./beatyourbest2.png";
 
 import prestige from "./company/prestige.png";
 import coalprints from "./company/coalprints.png";
@@ -42,7 +43,7 @@ import bybcover from "./byb/cover.jpg";
 import EditProfile from "./byb/EditProfile.png";
 import Exercise from "./byb/Exercise.png";
 import ExerciseName from "./byb/ExerciseName.png";
-import History from "./byb/History.png";
+import HistoryImg from "./byb/History.png";
 import Login from "./byb/Login.png";
 import Profile from "./byb/Profile.png";
 import Register from "./byb/Register.png";
@@ -50,7 +51,7 @@ import Workout from "./byb/Workout.png";
 import WorkoutName from "./byb/WorkoutName.png";
 import WorkoutRoutineAdded from "./byb/WorkoutRoutineAdded.png";
 import StartWorkout from "./byb/StartWorkout.png";
-import SearchExercises from "./byb/SearchExercises.png";
+import SearchExercises from "./byb/SearchExercises.gif";
 
 export {
   logo,
@@ -62,6 +63,7 @@ export {
   web,
   github,
   beatyourbest,
+  beatyourbest2,
   menu,
   close,
   css,
@@ -93,7 +95,7 @@ export {
   EditProfile,
   Exercise,
   ExerciseName,
-  History,
+  HistoryImg,
   Login,
   Profile,
   Register,

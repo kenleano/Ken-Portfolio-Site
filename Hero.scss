@@ -7,9 +7,21 @@ $color-blue: #45d8fc;
 $color-indigo: #5245fc;
 $color-violet: #af45fc;
 $color-pink: #F068C1;
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
 
 $color-black: #111111;
-
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
 // mixins & animation
 @mixin crossBrowserPrefix($property, $css) {
   -webkit-#{$property}: #{$css};
@@ -85,5 +97,57 @@ $color-black: #111111;
   @include rainbow2;
   @include crossBrowserPrefix(animation, magic 3s infinite linear alternate);
   @include crossBrowserPrefix(background-clip, text);
+}
+
+.buttonProject {
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px ;
+  font-size:20px;
+  font-weight: bold;
+ 
+  background: darkslateblue;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.default-text {
+  position: relative;
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.hover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Trap', sans-serif; 
+
+
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover styles for .buttonProject */
+.buttonProject:hover .default-text {
+  opacity: 0;
+}
+
+.buttonProject:hover .hover-text {
+  transform: translateY(0);
+  opacity: 1;
+
+  transition: opacity .5s;
+  animation: spin 12s linear infinite;
+  
 }
 
