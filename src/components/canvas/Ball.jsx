@@ -10,31 +10,85 @@ import {
 
 import CanvasLoader from "../Loader";
 
-const Ball = (props) => {
-  const [decal] = useTexture([props.imgUrl]);
-
+const CubeWithDecals = ({ imgUrl }) => {
+  const [decal] = useTexture([imgUrl]);
+  const scaleImg = 2.5;
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={10} />
       <directionalLight position={[0, 0, 0.05]} />
-      <mesh castShadow receiveShadow scale={3}>
-        <boxGeometry args={[1, 1]} />
-        <meshStandardMaterial
-         
-          color='#151030'
-          polygonOffset
-          polygonOffsetFactor={-5}
-          flatShading
-        />
+
+      {/* Create a cube */}
+      <mesh castShadow receiveShadow>
+        <boxGeometry args={[3, 3, 3]}
+         />{" "}
+        {/* Use args for width, height, and depth */}
+        <meshStandardMaterial color="#151030" flatShading />
+        {/* Apply Decal to Each Face */}
+        {/* Front */}
         <Decal
-          position={[0, 0, 0.79]}
-          rotation={[2 * Math.PI, 0, 6.25]}
-          scale={0.8}
+          position={[0, 0, 0.5]}
+          rotation={[0, 0, 0]}
+          scale={scaleImg}
           map={decal}
-          
           flatShading
-          uvScale={[1, 1]} // Adjust the scale as needed
-          uvOffset={[1, 1]} // Adjust the offset as needed
+          uvScale={[1, 1]}
+          uvOffset={[0, 0]}
+        />
+        {/* Back */}
+        <Decal
+          position={[0, 0, -0.5]}
+          rotation={[0, 3, 0]}
+          scale={scaleImg}
+          map={decal}
+          flatShading
+          onBeforeCompile={(shader) => {
+            // Modify the shader's fragment shader to flip vertically
+            shader.fragmentShader = shader.fragmentShader.replace(
+              'gl_FragColor = texture2D( map, vUv );',
+              'gl_FragColor = texture2D( map, vec2(vUv.x, 1.0 - vUv.y) );'
+            );
+          }}
+        />
+        {/* Left */}
+        <Decal
+          position={[-0.5, 0, 0]}
+          rotation={[0, -Math.PI / 2, 0]}
+          scale={scaleImg}
+          map={decal}
+          flatShading
+          uvScale={[1, 1]}
+          uvOffset={[0, 0]}
+        />
+        {/* Right  */}
+        <Decal
+        
+          position={[0.5, 0, 0]}
+          rotation={[0, Math.PI / 2, 0]}
+          scale={scaleImg}
+          map={decal}
+          flatShading
+          uvScale={[-1, 1]} // Mirror horizontally
+          uvOffset={[1, 0]} // Adjust the offset as needed
+        />
+        {/* Top  */}
+        <Decal
+          position={[0, 0.5, 0]}
+          rotation={[-Math.PI / 2, 0, 0]}
+          scale={scaleImg}
+          map={decal}
+          flatShading
+
+        />
+        {/* Bottom  */}
+        <Decal
+          position={[0, -0.5, 0]}
+          rotation={[Math.PI / 2, 0, 0]}
+          scale={scaleImg}
+          map={decal}
+          flatShading
+          uvScale={[1, 1]}
+          uvOffset={[0, 0]}
         />
       </mesh>
     </Float>
@@ -44,15 +98,21 @@ const Ball = (props) => {
 const BallCanvas = ({ icon }) => {
   return (
     <Canvas
-      frameloop='demand'
-      dpr={[2, 2]}
+    shadows
+    frameloop='demand'
+      dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false}
-        autoRotate={true} 
-        autoRotateSpeed={5}/>
-        <Ball imgUrl={icon} />
+        <OrbitControls
+          enableZoom={false}
+          autoRotate={true}
+        
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+          autoRotateSpeed={5}
+        />
+        <CubeWithDecals imgUrl={icon} />
       </Suspense>
 
       <Preload all />

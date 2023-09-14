@@ -43,11 +43,6 @@ abody {
   color: rgb(88 199 250 / 0%);
   transition: color 1s;
 }
-/* .card:hover:before, .card:hover:after {
-  animation: none;
-  opacity: 0;
-} */
-
 
 .card::before {
   content: "";
@@ -116,5 +111,55 @@ a {
   animation: spin 5.5s linear infinite;
 }
 
+
+
+.resumeButton {
+  position: relative;
+  display: inline-block; /* Ensure that the background-clip affects only the text itself */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 24px; /* Adjust the font size as needed */
+  margin-top: 20px;
+  border-radius: 24px;
+  padding: 0.25rem 1rem;
+  background-color:rgb(5,8,22);
+
+  cursor: pointer;
+  
+}
+
+
+
+.resumeButton::before {
+  content:"";
+ 
+  display: flex;
+  width: 101%;
+  height: 104%;
+
+  border-radius: 24px;
+  padding: 0.25rem 1rem;
+  background-image: linear-gradient(
+    var(--rotate)
+    ,  #fcb045, #F068C1, #5245fc );
+    position: absolute;
+    z-index: -1;
+ 
+    animation: spin 12s linear infinite;
+}
+
+.resumeButton:hover {
+  background-image: linear-gradient(var(--rotate), #fcb045, #F068C1, #5245fc);
+  animation: spin 10s linear infinite;
+  transition: color 1s;
+}
+
+
+.resumeButton:hover::before {
+  animation: pause 2.5s linear infinite;
+  opacity: 100%;
+}
 
 

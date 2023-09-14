@@ -27,32 +27,31 @@ const Navbar = () => {
 
   return (
     <nav
-    className={`${styles.paddingX} w-full flex items-center py-3 fixed top-0 z-20`}
-    style={{
-      background: scrolled ? "rgba(5, 8, 22, 0.1)" : "transparent",
-      backdropFilter: scrolled ? "blur(10px)" : "none",
-    }}
-  >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+      className={`${styles.paddingX} w-full flex items-center py-3 fixed top-0 z-20`}
+      style={{
+        background: scrolled ? "rgba(5, 8, 22, 0.1)" : "transparent",
+        backdropFilter: scrolled ? "blur(10px)" : "none",
+      }}
+    >
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-          to='/'
-          className='flex items-center gap-2'
+          to="/"
+          className="flex items-center gap-2"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-      
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-[18px] cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -60,11 +59,11 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
-            alt='menu'
-            className='w-[28px] h-[28px] object-contain'
+            alt="menu"
+            className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle(!toggle)}
           />
 
@@ -73,11 +72,11 @@ const Navbar = () => {
               !toggle ? "hidden" : "flex"
             } p-6 text-right absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
-            <ul className='list-none flex justify-end flex-1 flex-col gap-4'>
+            <ul className="list-none flex justify-end flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] ${
+                  className={`cursor-pointer text-[16px]${
                     active === nav.title ? "text-white" : "text-secondary"
                   }`}
                   onClick={() => {
@@ -85,23 +84,14 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a  href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
             </ul>
           </div>
         </div>
-      </div>
-      <div
-        onClick={() =>
-          window.open("https://github.com/kenleano/BeatYourBestApp", "_blank")
-        }
-       
-      >
-        <button className="flex items-center rounded-2xl px-5 py-2 bg-transparent text-secondary hover:bg-secondary text-white">
-          
-          <span className={` font-light cursor-pointer text-[16px] hover:text-white`}>Resume</span>
-        </button>
+
+      
       </div>
     </nav>
   );

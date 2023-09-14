@@ -22,7 +22,7 @@ const App = () => {
     <>
      
       <Navbar />
-      <div className="aurora bg-primary ">
+      <div className="aurora bg-primary overflow-hidden">
         <div className=" bg-cover bg-no-repeat bg-center">
           <div className="relative z-0">
             <Hero />
@@ -44,7 +44,7 @@ const App = () => {
 
         <div className="relative z-0">
           <Contact />
-          <StarsCanvas />
+         
         </div>
       </div>
      

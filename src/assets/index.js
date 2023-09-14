@@ -22,6 +22,14 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import photoshop from "./tech/photoshop.svg";
+import illustrator from "./tech/illustrator.svg";
+import aftereffects from "./tech/aftereffects.svg";
+import php from "./tech/php.png";
+import androidstudio from "./tech/androidstudio.png";
+
+import firebase from "./tech/firebase.png";
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -80,6 +88,13 @@ export {
   tailwind,
   typescript,
   threejs,
+  photoshop,
+  illustrator,
+  aftereffects,
+  androidstudio,
+  php,
+  firebase,
+
   coalprints,
   prestige,
   pcv,

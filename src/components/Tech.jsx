@@ -8,9 +8,9 @@ const Tech = () => {
   return (
     <div className="logos">
       <div className="logos-slide">
-        <div className="flex justify-center">
+        <div className="flex justify-center  ">
           {technologies.map((technology) => (
-            <div className="w-28 h-28" key={technology.name}>
+            <div className="w-28 h-28 hover:scale-150 transform transition-transform duration-300 ease-in-out" key={technology.name}>
               <BallCanvas icon={technology.icon} />
             </div>
           ))}

@@ -16,6 +16,13 @@ import {
     git,
     figma,
     docker,
+    photoshop,
+    illustrator,
+    aftereffects,
+    androidstudio,
+    php,
+    firebase,
+ 
     coalprints,
     pcv,
     jump,
@@ -76,30 +83,27 @@ import {
   ];
   
   const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
+    // {
+    //   name: "HTML 5",
+    //   icon: html,
+    // },
+    // {
+    //   name: "CSS 3",
+    //   icon: css,
+    // },
     {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    // {
+    //   name: "TypeScript",
+    //   icon: typescript,
+    // },
     {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
+
     {
       name: "Tailwind CSS",
       icon: tailwind,
@@ -117,6 +121,14 @@ import {
       icon: threejs,
     },
     {
+      name: "androidstudio",
+      icon: androidstudio,
+    },
+    {
+      name: "php",
+      icon: php,
+    },
+    {
       name: "git",
       icon: git,
     },
@@ -125,9 +137,19 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "photoshop",
+      icon: photoshop,
     },
+    {
+      name: "illustrator",
+      icon: illustrator,
+    },
+    {
+      name: "aftereffects",
+      icon: aftereffects,
+    },
+ 
+ 
   ];
   
   const experiences = [
