@@ -6,4 +6,7 @@ export default defineConfig({
   base: '/Ken-Portfolio-Site/', // Adjust this based on your repository name
 
   plugins: [react()],
+  build: {
+    outDir: 'dist', // Specify the output directory
+  },
 })
