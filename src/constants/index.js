@@ -286,19 +286,14 @@ import {
     { src: Workout, alt: "Workout" },
     { src: WorkoutName, alt: "Workout Name" },
     { src: WorkoutRoutineAdded, alt: "Workout Routine Added" },
-
     { src: Exercise, alt: "Exercise" },
     { src: SearchExercises, alt: "Search Exercises" },
     { src: ExerciseName, alt: "Exercise Name" },
-
-   
-   
-   
-
-
     { src: StartWorkout, alt: "Start Workout" },
     { src: HistoryImg, alt: "HistoryImg" },
 
   ];
+
+  
   
   export { services, technologies, experiences, testimonials, projects, bybimages };

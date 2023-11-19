@@ -90,7 +90,7 @@ const About = () => {
       </motion.p>
       <div
             onClick={() =>
-              window.open("https://github.com/kenleano/BeatYourBestApp","_blank")}>
+              window.open("https://drive.google.com/file/d/1BsIvuDUcna0wwf8ugqEfPt4Oz9sHP1VT/view?usp=sharing","_blank")}>
             <button className="resumeButton" >
               <h1 className={` font-medium cursor-pointer text-[16px] hovb`}>
                Download Resume
