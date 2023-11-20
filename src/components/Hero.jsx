@@ -12,7 +12,8 @@ const Hero = () => {
         className={`${styles.paddingX} absolute inset-0 top-0 flex flex-row gap-5 justify-center items-center`}
       >
         <div className="text-center">
-          <h1 className={`${styles.heroCenterText}`}>
+          {/* <h1 className={`${styles.heroText}`}> */}
+          <h1 className="lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px]">
             <span class="text">Kenneth Leaño</span>
           </h1>
           <p className={`${styles.heroSubText} text-white-100`}>

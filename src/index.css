@@ -1,12 +1,12 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
-
+/* @import url('./src/assets/trap/Trap-Black.otf'); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Trap'; /* Choose a unique name for your font */
-  src: url('/assets/trap/Trap-Black.otf') format('otf'); /* Add different file formats for compatibility */
+  font-family: "Trap"; /* Choose a unique name for your font */
+  src: url('./assets/trap/Trap-Black.otf') format('otf'); /* Add different file formats for compatibility */
       
   /* You can also specify other font properties here, like font-weight and font-style */
 }
@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }

@@ -7,6 +7,10 @@ $color-blue: #45d8fc;
 $color-indigo: #5245fc;
 $color-violet: #af45fc;
 $color-pink: #F068C1;
+@font-face {
+  font-family: 'Trap';
+  src: url('./src/assets/trap/Trap-Black.otf') format('opentype');
+}
 @keyframes spin {
   0% {
     --rotate: 0deg;
@@ -84,7 +88,7 @@ $color-black: #111111;
 }
 
 .text {
-  font-family: 'Trap', sans-serif; 
+  font-family: Trap, sans-serif;
   color: transparent;
   @include rainbow;
   @include crossBrowserPrefix(animation, magic 3s infinite linear alternate);
@@ -92,7 +96,8 @@ $color-black: #111111;
 }
 
 .text2 {
-  font-family: 'Trap', sans-serif; 
+  font-family: Trap, sans-serif;  
+  
   color: transparent;
   @include rainbow2;
   @include crossBrowserPrefix(animation, magic 3s infinite linear alternate);
@@ -129,7 +134,6 @@ $color-black: #111111;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Trap', sans-serif; 
   background-color:#5245fc;
   transform: translateY(-100%);
   opacity: 0;

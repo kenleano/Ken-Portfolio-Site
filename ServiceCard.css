@@ -4,6 +4,11 @@
   inherits: false;
 }
 
+@font-face {
+  font-family: 'Trap';
+  src: url('./src/assets/trap/Trap-Black.otf') format('opentype');
+}
+
 :root {
   --card-height: 65vh;
   --card-width: calc(var(--card-height) / 3.5);
@@ -95,7 +100,7 @@ abody {
 a {
   color: #212534;
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: Trap, sans-serif;
   font-weight: bold;
   margin-top: 2rem;
 }

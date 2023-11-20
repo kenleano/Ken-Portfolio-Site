@@ -34,8 +34,8 @@ const ServiceCard = ({ index, title, icon }) => (
         /> */}
         </div>
 
-        <h3 className=" text-white text-[20px] font-black text-center">
-          <span class="texttitle" style={{ fontFamily: "Trap" }}>
+        <h3 className=" text-white text-[20px] text-center">
+          <span class="texttitle" >
             {title}
           </span>
         </h3>
@@ -49,7 +49,7 @@ const About = () => {
     <div>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText} style={{ fontFamily: "Trap" }}>
+        <h2 className={styles.sectionHeadText}>
           <span class="text2">Overview</span>
         </h2>
       </motion.div>
@@ -92,7 +92,7 @@ const About = () => {
             onClick={() =>
               window.open("https://drive.google.com/file/d/1BsIvuDUcna0wwf8ugqEfPt4Oz9sHP1VT/view?usp=sharing","_blank")}>
             <button className="resumeButton" >
-              <h1 className={` font-medium cursor-pointer text-[16px] hovb`}>
+              <h1 className={` cursor-pointer text-[16px] hovb`}>
                Download Resume
               </h1>
             </button>
